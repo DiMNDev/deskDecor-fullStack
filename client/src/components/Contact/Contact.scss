@@ -1,0 +1,103 @@
+.contact {
+  width: 50%;
+  height: 250px;
+  color: aliceblue;
+  text-shadow: 0px 0px 2px black;
+  background: linear-gradient(
+    to bottom,
+    rgb(69, 69, 69),
+    rgba(255, 255, 255, 1)
+  );
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .leftSide {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+
+    h2 {
+      align-self: flex-end;
+    }
+
+    p {
+      align-self: flex-end;
+    }
+  }
+  .rightSide {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+  }
+
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-right: 10px;
+
+    input {
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      background-color: rgba(0, 0, 0, 0.55);
+      color: aliceblue;
+      width: 200px;
+      height: 28px;
+      font-size: 18px;
+      padding: 0 8px 0 5px;
+      color: aliceblue;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgb(54, 50, 50);
+      box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.31);
+    }
+
+    .subscribeBtn {
+      height: 30px;
+      width: 100px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      font-size: 18px;
+      color: aliceblue;
+      background-color: rgba(0, 0, 0, 0.69);
+      border: 1px solid rgb(54, 50, 50);
+      box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.31);
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(240, 248, 255, 0.702);
+        box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.31);
+      }
+
+      &:active {
+        transition: all 0.2s;
+        color: black;
+      }
+    }
+  }
+
+  .bottomRight {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-top: 10px;
+
+    .icon {
+      cursor: pointer;
+      padding: 3px;
+      border-radius: 50%;
+      &:hover {
+        box-shadow: 0px 0px 4px black;
+      }
+    }
+  }
+}

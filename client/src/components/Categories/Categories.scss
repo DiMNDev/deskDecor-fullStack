@@ -1,0 +1,68 @@
+.categories {
+  display: flex;
+  height: 80vh;
+  gap: 10px;
+
+  .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col-l {
+    flex: 2;
+
+    button {
+      width: 150px !important;
+      height: 75px !important;
+      font-size: 22px !important;
+    }
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &:nth-child(3) {
+        width: 90%;
+        border-radius: 20px;
+      }
+    }
+
+    button {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-family: "Mooli", sans-serif;
+      font-size: 18px;
+      // text-transform: uppercase;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      color: aliceblue;
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgb(54, 50, 50);
+      box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.31);
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        color: rgba(240, 248, 255, 0.702);
+        box-shadow: inset 0px 0px 25px rgba(255, 255, 255, 0.31);
+      }
+
+      &:active {
+        transition: all 0.2s;
+        color: black;
+      }
+    }
+  }
+}
